@@ -2,7 +2,7 @@ import random
 vitoria = 0
 while True:
     y = str(input('Escolher PAR OU IMPAR: [P/I]').upper().strip()[0])
-    if y not in ['P', 'I']:
+    if y not in ('PI'):
         print('Opção inválida! Escolha "P" para Par ou "I" para Ímpar.')
         continue
     x = int(input('Digite um valor: '))

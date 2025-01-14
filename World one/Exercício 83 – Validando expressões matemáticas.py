@@ -1,7 +1,18 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Jan  8 19:44:14 2025
-
-@author: Valther
-"""
-
+expr = str(input('Digite a expressao: '))
+pilha = []
+for simb in expr:
+    if simb == '(':
+        pilha.append('(')
+    elif simb == ')':
+        if len(pilha) > 0:
+            pilha.pop()
+        else:
+            pilha.append(')')
+            break
+if len(pilha) == 0:
+    print('Sua expressao esta valida!')
+else:
+    print('Sua expressao esta errada!')
+    
+        
+        
